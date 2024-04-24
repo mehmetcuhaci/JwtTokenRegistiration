@@ -1,0 +1,6 @@
+@JwtSignFinal_HostAddress = http://localhost:5096
+
+GET {{JwtSignFinal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
