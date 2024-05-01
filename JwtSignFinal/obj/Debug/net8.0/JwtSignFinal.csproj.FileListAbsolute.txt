@@ -69,3 +69,4 @@ C:\Users\mehme\source\repos\JwtSignFinal\JwtSignFinal\obj\Debug\net8.0\refint\Jw
 C:\Users\mehme\source\repos\JwtSignFinal\JwtSignFinal\obj\Debug\net8.0\JwtSignFinal.pdb
 C:\Users\mehme\source\repos\JwtSignFinal\JwtSignFinal\obj\Debug\net8.0\JwtSignFinal.genruntimeconfig.cache
 C:\Users\mehme\source\repos\JwtSignFinal\JwtSignFinal\obj\Debug\net8.0\ref\JwtSignFinal.dll
+C:\Users\mehme\source\repos\JwtSignFinal\JwtSignFinal\obj\Debug\net8.0\JwtSignFinal.sourcelink.json

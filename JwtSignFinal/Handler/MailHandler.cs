@@ -40,7 +40,7 @@ namespace JwtSignFinal.Handler
                     smtpClient.EnableSsl = true;
 
                     var token = TokenHandler.CreateToken(configuration, newUser); // userId bilgisi kullanılarak token oluşturuluyor
-                    newUser.VerificationToken = token.AccessToken; // Kullanıcı nesnesi güncelleniyor
+                    newUser.VerificationToken = token.AccessToken; 
                     newUser.ETokenExpiration = token.Expiration;
                     _dataContext.SaveChanges(); // Veritabanı güncellemesi yapılıyor
 

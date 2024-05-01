@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JwtSignFinal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3eb6e8c1cb155e38a6d4f0c6007edd1fb0e74f2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("JwtSignFinal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JwtSignFinal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

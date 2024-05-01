@@ -42,7 +42,7 @@ namespace JwtSignFinal.Controllers
                 }
 
                 user.IsEmailVerified = 1;
-                user.VerificationToken = null; // Optionally clear the token after verification
+                user.VerificationToken = null; // verify olduktan sonra sil
                 _dataContext.SaveChanges();
 
                 return Ok("Email has been verified.");

@@ -1,37 +1,5 @@
 [
   {
-    "ContainingType": "JwtSignFinal.Controllers.AuthController",
-    "Method": "Get",
-    "RelativePath": "api/Auth",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newUser",
-        "Type": "JwtSignFinal.Models.ApiUsers",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "JwtSignFinal.Controllers.MailController",
-    "Method": "VerifyEmail",
-    "RelativePath": "api/Mail/Verify",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "JwtSignFinal.Models.EmailRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "JwtSignFinal.Controllers.RegisterController",
     "Method": "Register",
     "RelativePath": "api/Register/Register",
@@ -54,7 +22,18 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "passWord",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
