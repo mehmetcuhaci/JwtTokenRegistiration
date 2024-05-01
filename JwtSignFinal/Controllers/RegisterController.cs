@@ -27,31 +27,28 @@ namespace JwtSignFinal.Controllers
         public async Task<IActionResult> Register([FromBody] ApiUsers newUser)
         {
             await _datacontext.Users.AddAsync(newUser);
-            await _datacontext.SaveChangesAsync(); // Save the user to database
+            await _datacontext.SaveChangesAsync(); 
 
-            // Generate a token after successful registration
+          
             Token token = TokenHandler.CreateToken(_configuration, newUser);
             newUser.Token = token.AccessToken;
-            newUser.VerificationToken = token.AccessToken; // Update the verification token
-            newUser.ETokenExpiration = token.Expiration; // Set token expiration
-            await _datacontext.SaveChangesAsync(); // Save changes
+            newUser.VerificationToken = token.AccessToken; 
+            newUser.ETokenExpiration = token.Expiration;
+            await _datacontext.SaveChangesAsync();
 
-            // Prepare the email request
+            
             EmailRequest emailRequest = new EmailRequest
             {
                 To = newUser.Email,
-                Subject = "Welcome to our service!",
+                Subject = "Welcommen",
                 Body = "Thanks for registering. Please verify your email by clicking here: [Verification Link]"
             };
 
-            // Send the email
-            string emailResult = await _mailHandler.SendMail(_configuration, emailRequest,newUser);
-            if (!emailResult.StartsWith("Mail Gönderildi")) // Check if the mail was sent successfully
-            {
-                throw new Exception(emailResult); // If mail sending failed, throw an exception
-            }
+           
+             await _mailHandler.SendMail(_configuration, emailRequest,newUser);
+            
 
-            return Ok("Registration successful.");
+            return Ok("Kayıt başarılı lütfen mailinizi kontrol edin");
         }
     }
 }
